@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.TrangChinh">
+
+    <RelativeLayout
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#27BFD6">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_activity"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_below="@id/trangChu"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_toolbar"
+            app:title="Trang chủ"
+            app:titleTextColor="#C51162" />
+
+        <TextView
+            android:id="@+id/trangChu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Trang chủ"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/size4"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/size5"
+            android:layout_height="@dimen/size5"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/trangChu"
+            android:src="@drawable/eating" />
+
+        <ImageView
+            android:layout_width="@dimen/size5"
+            android:layout_height="@dimen/size5"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/trangChu"
+            android:src="@drawable/hello" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewLuaChon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar_activity" />
+
+        <TextView
+            android:id="@+id/titleActionBar"
+            android:layout_width="wrap_content"
+            android:layout_height="?actionBarSize"
+            android:layout_below="@id/trangChu"
+            android:layout_marginLeft="@dimen/size6"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:text="Trang chủ"
+            android:textColor="#C51162"
+            android:textSize="@dimen/size" />
+
+    </RelativeLayout>
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/color_background_2"
+                android:orientation="horizontal">
+
+                <ViewFlipper
+                    android:id="@+id/viewflipper_quangcao"
+                    android:layout_width="@dimen/size11"
+                    android:layout_height="@dimen/size9"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp" />
+
+                <ImageView
+                    android:id="@+id/imageLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/custom_image" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D19E36">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/architects_daughter"
+                    android:gravity="center"
+                    android:text="Mới nhất"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/size2" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="#9C9C9C"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewSpHot"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#D19E36">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/architects_daughter"
+                    android:gravity="center"
+                    android:text="Đồ uống hiện có"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/size2" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#9C9C9C"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewDoUongHienCo"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_marginTop="15dp"
+                android:background="#F1A064"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+
+                <ImageView
+                    android:id="@+id/imageAdd"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/add"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageTab"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/tabs"
+                    app:layout_constraintStart_toEndOf="@+id/imageAdd"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageLiveStream"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/live_streaming"
+                    app:layout_constraintStart_toEndOf="@+id/imageTab"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageThongBao"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/notifications"
+                    app:layout_constraintStart_toEndOf="@+id/imageLiveStream"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/user"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageThongBao"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start">
+
+            <androidx.cardview.widget.CardView
+                app:cardBackgroundColor="#3E4A4C"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ListView
+                    android:id="@+id/listViewMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </ListView>
+            </androidx.cardview.widget.CardView>
+        </com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</LinearLayout>

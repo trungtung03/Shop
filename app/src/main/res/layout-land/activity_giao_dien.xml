@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="MissingDefaultResource">
+
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="0"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnDia"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="265dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="266dp"
+        android:layout_marginBottom="106dp"
+        android:src="@drawable/dia3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/xucSac"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="108dp"
+        android:src="@drawable/xucsac1"
+        app:layout_constraintStart_toStartOf="@+id/btnDia"
+        app:layout_constraintTop_toTopOf="@+id/btnDia" />
+
+    <ImageView
+        android:id="@+id/xucSac2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/xucsac2"
+        app:layout_constraintStart_toStartOf="@+id/btnDia"
+        app:layout_constraintTop_toTopOf="@+id/btnDia" />
+
+    <ImageView
+        android:id="@+id/xucSac3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="112dp"
+        android:src="@drawable/xucsac3"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDia"
+        app:layout_constraintEnd_toEndOf="@+id/btnDia" />
+
+    <ImageButton
+        android:id="@+id/btnDia2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="264dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dia2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.398" />
+
+    <Button
+        android:id="@+id/btnXiu"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="73dp"
+        android:background="@drawable/button_tai_xiu"
+        android:fontFamily="@font/days_one"
+        android:text="Xỉu"
+        android:textColor="#FFFF06"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnDia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:background="@drawable/button_tai_xiu"
+        android:id="@+id/btnTai"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="109dp"
+        android:fontFamily="@font/days_one"
+        android:text="Tài"
+        android:textColor="#FFFF06"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnDia2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:button="@drawable/ic_baseline_attach_money_24"
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="60dp"
+        android:text="100000"
+        android:textColor="#D50000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioButton
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="60dp"
+        android:button="@drawable/ic_baseline_attach_money_24"
+        android:text="50000"
+        android:textColor="#FF6D00"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox" />
+
+    <RadioButton
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="336dp"
+        android:layout_marginBottom="60dp"
+        android:button="@drawable/ic_baseline_attach_money_24"
+        android:text="20000"
+        android:textColor="#00C853"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2" />
+
+    <Button
+        android:id="@+id/btnDatCuoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/button_login"
+        android:text="Đặt Cược"
+        android:textColor="#AA00FF"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/checkBox3"
+        app:layout_constraintTop_toBottomOf="@+id/btnTai" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

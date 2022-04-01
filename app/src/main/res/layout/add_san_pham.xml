@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@android:color/transparent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_margin="5dp"
+        android:background="#805600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Add sản phẩm"
+            android:textAllCaps="true"
+            android:textColor="#00BFA5"
+            android:textSize="@dimen/size3"
+            android:textStyle="bold" />
+
+        <EditText
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:id="@+id/editTextTen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Tên sản phẩm"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextHinhAnh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextTen"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Hình ảnh sản phẩm"
+            android:inputType="text"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/editTextGia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextHinhAnh"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Giá sản phẩm"
+            android:inputType="numberDecimal"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/editTextDiaChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextGia"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:hint="Địa chỉ"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <EditText
+            android:id="@+id/editTextTLoaiSanPham"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextDiaChi"
+            android:ems="10"
+            android:hint="Loại sản phẩm"
+            android:inputType="textPersonName"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <Button
+            android:backgroundTint="#FFD600"
+            android:textColor="#AF004F"
+            android:id="@+id/btnXacNhanAdd"
+            android:layout_width="@dimen/size8"
+            android:layout_height="@dimen/size4"
+            android:layout_below="@id/editTextTLoaiSanPham"
+            android:layout_marginTop="5dp"
+            android:text="Thêm"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnHuyAdd"
+            android:layout_width="@dimen/size8"
+            android:layout_height="@dimen/size4"
+            android:layout_below="@id/editTextTLoaiSanPham"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/btnXacNhanAdd"
+            android:backgroundTint="#6F00A6"
+            android:text="Hủy"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

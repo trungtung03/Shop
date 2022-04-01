@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:textStyle="bold"
+        android:id="@+id/edtName2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:textSize="18dp"
+       />
+
+    <EditText
+        android:id="@+id/edtPassword2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        android:textSize="18dp"
+      android:layout_below="@+id/edtName2" />
+
+    <Button
+        android:id="@+id/btnHuy2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtPassword2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_button_login2"
+        android:text="Hủy"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnDangKy"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/edtPassword2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="353dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/custom_button_login2"
+        android:text="Đăng ký"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+</RelativeLayout>

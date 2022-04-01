@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/color_background_3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageThucPhamHot"
+                    android:layout_width="@dimen/size9"
+                    android:layout_height="@dimen/size9"
+                    android:src="@drawable/not_image" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/textTenThucPhamHot"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="tên thực phẩm"
+                        android:textColor="#000000"
+                        android:textSize="13sp" />
+                </ScrollView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/textGiaThucPhamHot"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="giá thực phẩm"
+                        android:textColor="#6200EA"
+                        android:textSize="13sp" />
+                </ScrollView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/textDiaChi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="địa chỉ quán ăn"
+                        android:textAppearance="?android:attr/textAppearance"
+                        android:textColor="#850606" />
+                </ScrollView>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="top|right"
+                android:src="@drawable/new_food" />
+
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

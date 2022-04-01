@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable-v24/color_background_2.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable-v24/color_background_3.xml" value="0.19305555555555556" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable-v24/custom_button_3.xml" value="0.19305555555555556" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable-v24/custom_button_4.xml" value="0.33425925925925926" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable-v24/custom_toolbar_2.xml" value="0.25" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable-v24/ic_baseline_attach_money_24.xml" value="0.33425925925925926" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable/color_background.xml" value="0.2171875" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable/color_background_3.xml" value="0.3609375" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable/color_background_4.xml" value="0.2171875" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable/color_background_5.xml" value="0.18564814814814815" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable/custom_button.xml" value="0.33425925925925926" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable/custom_button_2.xml" value="0.33425925925925926" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable/custom_image.xml" value="0.37604166666666666" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable/custom_layout.xml" value="0.33425925925925926" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/drawable/custom_toolbar.xml" value="0.33425925925925926" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/font/alfa_slab_one.xml" value="0.34675925925925927" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout-land/activity_giao_dien.xml" value="0.304673721340388" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout-land/giao_dien.xml" value="0.17019400352733685" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout-land/man_hinh_dohop_adapter.xml" value="0.304673721340388" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout-land/man_hinh_dohopmoinhat_adapter.xml" value="0.304673721340388" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/activity_chi_tiet.xml" value="0.25" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/activity_do_hop.xml" value="0.33" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/activity_do_trang_mieng.xml" value="0.33" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/activity_do_uong.xml" value="0.22" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/activity_giao_dien.xml" value="0.3199074074074074" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/activity_gio_hang.xml" value="0.2" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/activity_trangchinh.xml" value="0.25" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/add_san_pham.xml" value="0.33" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/giao_dien.xml" value="0.3199074074074074" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/lua_chon_adapter.xml" value="0.67" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/lua_chon_dotrangmieng_adapter.xml" value="0.3199074074074074" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/man_hinh_chinh_adapter.xml" value="0.33" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/man_hinh_chinh_adapter_2.xml" value="0.33" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/man_hinh_chitiet_adapter.xml" value="0.3199074074074074" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/man_hinh_dohop_adapter.xml" value="0.22" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/man_hinh_dohopmoinhat_adapter.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/man_hinh_dotrangmieng_adapter.xml" value="0.5" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/man_hinh_dotrangmiengmoinhat_adapter.xml" value="0.3199074074074074" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/man_hinh_douong_adapter.xml" value="0.3199074074074074" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/man_hinh_douong_moinhat_adapter.xml" value="0.33" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/man_hinh_gio_hang.xml" value="0.302536231884058" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/man_hinh_gio_hang_adapter.xml" value="0.25" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/man_hinh_sale_adapter.xml" value="0.33" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/menu_adapter.xml" value="0.33" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/layout/progress_bar.xml" value="0.67" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/menu/menu_actionbar_chitiet.xml" value="0.3199074074074074" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/menu/menu_actionbar_dotrangmieng.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/menu/menu_actionbar_giohan.xml" value="0.3199074074074074" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/menu/menu_actionbar_trangchinh.xml" value="0.1787037037037037" />
+        <entry key="..\:/Users/tungn/AndroidStudioProjects/Appchuadatten/app/src/main/res/menu/menus.xml" value="0.35989583333333336" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

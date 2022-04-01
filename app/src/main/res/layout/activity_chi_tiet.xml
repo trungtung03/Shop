@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ChiTiet">
+
+    <TextView
+        android:id="@+id/textViewDiaChiChiTiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:text="địa chỉ"
+        android:textColor="#B6570F"
+        android:textSize="@dimen/size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewGiaChiTiet" />
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="@dimen/size"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewChiTiet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.018">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/imageBackChiTiet"
+                android:layout_width="@dimen/size3"
+                android:layout_height="@dimen/size3"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/back_3" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/size11"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                app:cardBackgroundColor="#6F736C"
+                app:cardCornerRadius="30dp">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_chitiet"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/custom_toolbar"
+                    app:title="Giỏ hàng"
+                    app:titleTextColor="#2E0045">
+
+                </androidx.appcompat.widget.Toolbar>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageViewChiTiet"
+        android:layout_width="match_parent"
+        android:layout_height="314dp"
+        android:scaleType="fitXY"
+        android:src="#9BC1C6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <TextView
+        android:id="@+id/textViewTenChiTiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:text="tên"
+        android:textColor="#000000"
+        android:textSize="@dimen/size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewChiTiet" />
+
+    <TextView
+        android:id="@+id/textViewGiaChiTiet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:text="giá"
+        android:textColor="#FF0073"
+        android:textSize="@dimen/size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTenChiTiet" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewChiTiet2"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDiaChiChiTiet"
+        tools:layout_editor_absoluteX="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSanPhamChiTiet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size9"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDiaChiChiTiet">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSaleChiTiet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size4"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageTrangChinhChiTiet"
+            android:layout_width="@dimen/size3"
+            android:layout_height="@dimen/size3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/home" />
+
+        <TextView
+            android:layout_width="@dimen/size3"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageTrangChinhChiTiet"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@+id/imageChatChiTiet"
+            android:gravity="center"
+            android:text="Trang chính"
+            android:textColor="#000000"
+            android:textSize="5sp" />
+
+        <ImageView
+            android:id="@+id/imageChatChiTiet"
+            android:layout_width="@dimen/size3"
+            android:layout_height="@dimen/size3"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginTop="0.5dp"
+            android:layout_toRightOf="@id/imageTrangChinhChiTiet"
+            android:src="@drawable/chat" />
+
+        <TextView
+            android:layout_width="@dimen/size3"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageChatChiTiet"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@id/imageTrangChinhChiTiet"
+            android:gravity="center"
+            android:text="Chat"
+            android:textColor="#000000"
+            android:textSize="5sp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/caraViewThemGioHangChiTiet"
+            android:layout_width="125dp"
+            android:layout_height="@dimen/size4"
+            android:layout_marginLeft="@dimen/size3"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/imageChatChiTiet"
+            app:cardCornerRadius="@dimen/size5">
+
+            <Button
+                android:id="@+id/btnThemGioHangChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button_2"
+                android:gravity="center"
+                android:text="Thêm vào giỏ hàng"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/size12"
+            android:layout_height="@dimen/size3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/caraViewThemGioHangChiTiet"
+            app:cardCornerRadius="@dimen/size5">
+
+            <Button
+                android:id="@+id/btnMuaNgayChiTiet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_button"
+                android:text="Mua ngay"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

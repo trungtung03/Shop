@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/sale"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#82DCEA"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp">
+     <RelativeLayout
+         android:gravity="center"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <TextView
+             android:id="@+id/tV"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="15.000đ"
+             android:gravity="center"
+             android:textColor="#0834AF"
+             android:textStyle="bold"
+             android:layout_marginTop="4dp"
+             android:textSize="@dimen/size"/>
+
+         <TextView
+             android:layout_below="@id/tV"
+             android:id="@+id/tV3"
+             android:layout_marginTop="0.5dp"
+             android:gravity="center"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Sale tối thiểu"
+             android:textSize="15sp"
+             android:textColor="#0834AF"/>
+         <TextView
+             android:id="@+id/tV4"
+             android:layout_below="@id/tV3"
+             android:gravity="center"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="50.000đ"
+             android:textSize="15sp"
+             android:textColor="#0834AF"/>
+     </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:layout_marginRight="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#82DCEA"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_toRightOf="@+id/sale">
+
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <TextView
+             android:textColor="#0834AF"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:text="|\n|\n|\n|\n|"/>
+
+         <TextView
+             android:layout_marginLeft="5dp"
+             android:id="@+id/tV2"
+             android:textColor="#0834AF"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Mã vận chuyển\nCho một số sản phẩm..."
+             android:textSize="15sp"/>
+
+         <androidx.cardview.widget.CardView
+             android:layout_width="@dimen/size3"
+             android:layout_height="@dimen/size3"
+             app:cardCornerRadius="20dp"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentRight="true"
+             app:cardBackgroundColor="#370091EA">
+             <ImageView
+                 android:scaleType="fitXY"
+                 android:id="@+id/more"
+                 android:layout_margin="5dp"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:src="@drawable/more"/>
+
+         </androidx.cardview.widget.CardView>
+
+         <Button
+             android:id="@+id/btnSuuTam"
+             android:layout_width="@dimen/size7"
+             android:layout_height="@dimen/size4"
+             android:layout_below="@+id/tV2"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="@dimen/size"
+             android:layout_marginBottom="8dp"
+             android:background="@drawable/custom_button_3"
+             android:text="Sưu tầm"
+             android:textAllCaps="false"
+             android:textColor="#ffffff"
+             android:textSize="13sp" />
+
+     </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

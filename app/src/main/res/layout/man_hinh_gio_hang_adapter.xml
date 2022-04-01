@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageHinhGioHang"
+        android:layout_width="@dimen/size9"
+        android:layout_height="@dimen/size9"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:src="#ff0" />
+
+    <TextView
+        android:textColor="#0091EA"
+        android:text="Name"
+        android:textStyle="bold"
+        android:id="@+id/textViewNameGioHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imageHinhGioHang"
+        android:textSize="@dimen/size" />
+    <TextView
+        android:text="Giá"
+        android:textColor="#D50000"
+        android:textSize="@dimen/size"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/textViewNameGioHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageHinhGioHang"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/textViewGiaGioHang"/>
+    <TextView
+        android:text="Address"
+        android:textColor="#FF6D00"
+        android:textSize="@dimen/size"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/textViewGiaGioHang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageHinhGioHang"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/textViewDiaChiGioHang"/>
+
+    <ImageButton
+        android:id="@+id/minusGioHang"
+        android:layout_width="@dimen/size2"
+        android:layout_height="@dimen/size2"
+        android:layout_below="@id/textViewDiaChiGioHang"
+        android:layout_marginLeft="@dimen/size9"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imageHinhGioHang"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/minus" />
+
+
+    <ImageButton
+        android:id="@+id/plusGioHang"
+        android:layout_width="@dimen/size2"
+        android:layout_height="@dimen/size2"
+        android:layout_below="@id/textViewDiaChiGioHang"
+        android:layout_marginLeft="@dimen/size10"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imageHinhGioHang"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/plus" />
+
+    <TextView
+        android:id="@+id/textViewSoLuongGioHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDiaChiGioHang"
+        android:layout_marginLeft="155dp"
+        android:layout_toRightOf="@id/imageHinhGioHang"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="@dimen/size2"
+        android:textStyle="bold" />
+</RelativeLayout>

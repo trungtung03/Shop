@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3C3B6"
+    tools:context=".activity.DoTrangMieng">
+
+    <LinearLayout
+        android:id="@+id/layoutDoTrangMieng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_layout"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageBackDoTrangMieng"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/size"
+            android:src="@drawable/left" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size2"
+            app:cardBackgroundColor="#DFBD78"
+            app:cardCornerRadius="@dimen/size7">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_DoTrangMieng"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/custom_toolbar"
+                app:title="Đồ tráng miệng" />
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewDoTrangMiengActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layoutDoTrangMieng"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        app:cardCornerRadius="@dimen/size5">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewLuaChonDoTrangMieng"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#656560" />
+    </androidx.cardview.widget.CardView>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    android:id="@+id/drawerLayout"
+    android:layout_below="@id/cardViewDoTrangMiengActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewDoTrangMiengActivity2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDoTrangMieng"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="#6D000000" />
+        </androidx.cardview.widget.CardView>
+
+        <ViewFlipper
+            android:id="@+id/viewflipper_quangcaoDoTrangMieng"
+            android:layout_width="@dimen/size10"
+            android:layout_height="@dimen/size11"
+            android:layout_below="@id/videoQuangCaoDoAn"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp">
+
+        </ViewFlipper>
+
+        <TextView
+            android:id="@+id/newDoTrangMieng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardViewDoTrangMiengActivity2"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/viewflipper_quangcaoDoTrangMieng"
+            android:gravity="center"
+            android:text="Đồ tráng miệng mới nhất"
+            android:textColor="#DD2C00"
+            android:textSize="14sp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/newDoTrangMieng"
+            android:layout_toRightOf="@id/viewflipper_quangcaoDoTrangMieng"
+            app:cardBackgroundColor="#C1656563"
+            app:cardCornerRadius="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDoTrangMiengMoiNhat"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.cardview.widget.CardView>
+
+        <VideoView
+            android:id="@+id/videoQuangCaoDoAn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size9"
+            android:layout_below="@id/cardViewDoTrangMiengActivity2"
+            android:layout_toLeftOf="@id/newDoTrangMieng"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/viewflipper_quangcaoDoTrangMieng"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@id/newDoTrangMieng"
+            android:fontFamily="@font/anonymous_pro_italic"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:text="Nguyễn Trung Tùng\n0862982143\ntungnguyentrung77@gmail.com"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#3E4A4C"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listViewMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ListView>
+        </androidx.cardview.widget.CardView>
+    </com.google.android.material.navigation.NavigationView>
+</androidx.drawerlayout.widget.DrawerLayout>
+
+ </RelativeLayout>

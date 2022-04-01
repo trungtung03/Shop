@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activity.DoUong">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:id="@+id/layoutDoUong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D31B6E">
+
+            <ImageButton
+                android:id="@+id/imageBackDoUong"
+                android:layout_width="@dimen/size3"
+                android:layout_height="@dimen/size3"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="3dp"
+                android:background="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/back_2"></ImageButton>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_toLeftOf="@id/imageGioHangDoUong"
+                android:layout_toRightOf="@id/imageBackDoUong"
+                app:cardBackgroundColor="#025F98"
+                app:cardCornerRadius="@dimen/size10">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_DoUong"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/custom_toolbar"
+                    app:title="Đồ uống"
+                    app:titleTextColor="#9A4302" />
+
+            </androidx.cardview.widget.CardView>
+
+            <ImageButton
+                android:id="@+id/imageGioHangDoUong"
+                android:layout_width="@dimen/size3"
+                android:layout_height="@dimen/size3"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="3dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/shopping_cart_2" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layoutDoUong2"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_below="@id/layoutDoUong">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                app:cardBackgroundColor="#D8D8BC"
+                app:cardCornerRadius="@dimen/size">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewDoUong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layoutDoUong2">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/layoutDoUong3"
+                android:layout_below="@+id/layoutDoUong2"
+                android:background="#FFFFFF">
+
+                <VideoView
+                    android:id="@+id/videoViewDoUong"
+                    android:layout_width="190dp"
+                    android:layout_height="@dimen/size9"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp" />
+
+                <ImageView
+                    android:id="@+id/imageQuangCaoDoUong"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size10"
+                    android:layout_below="@+id/videoViewDoUong"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toRightOf="@+id/cardViewDoUong"
+                    android:src="@drawable/clip_image_douong_1" />
+
+                <ViewFlipper
+                    android:id="@+id/viewflipper_quangcaoDoUong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/layoutDoUong3"
+                    android:layout_below="@+id/imageQuangCaoDoUong"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/cardViewDoUong" />
+
+                <TextView
+                    android:id="@+id/tVdouong2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@+id/videoViewDoUong"
+                    android:gravity="center"
+                    android:text="Đồ uống mới nhất"
+                    android:textColor="#2962FF"
+                    android:textSize="@dimen/size" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewDoUong"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/layoutDoUong3"
+                    android:layout_below="@id/tVdouong2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toLeftOf="@+id/videoViewDoUong"
+                    app:cardBackgroundColor="#9E9E9E"
+                    app:cardCornerRadius="@dimen/size">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewDoUongMoiNhat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layoutDoUong3"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#FFFFFF">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="45dp"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center_vertical"
+                        android:text="Nguyễn Trung Tùng -> Sđt: 0862982143\nEmail: tungnguyentrung77@gmail.com"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageTrangChinhDoUong"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/imageTrangChinhDoUong"
+                        android:layout_width="@dimen/size4"
+                        android:layout_height="@dimen/size4"
+                        android:layout_marginEnd="4dp"
+                        android:background="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/home_2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </RelativeLayout>
+
+            <com.google.android.material.navigation.NavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                app:cardBackgroundColor="#3E4A4C">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#3E4A4C">
+
+                    <ListView
+                        android:id="@+id/listViewMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </ListView>
+                </androidx.cardview.widget.CardView>
+
+            </com.google.android.material.navigation.NavigationView>
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

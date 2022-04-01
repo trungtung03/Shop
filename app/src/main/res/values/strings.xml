@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bán hàng</string>
+    <string name="title">Trang chủ</string>
+    <string name="title2">Trà sữa</string>
+    <string name="title3">Đồ tráng miệng</string>
+    <string name="title4">Cơm hộp</string>
+    <string name="title5">Đồ chay</string>
+    <string name="title6">Đồ uống</string>
+    <string name="title7">Rau củ quả</string>
+    <string name="title8">Món lẩu</string>
+    <string name="title9">Sushi</string>
+    <string name="title10">Mì phở</string>
+</resources>
